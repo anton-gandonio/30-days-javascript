@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="js__text">
+          <span class="yellow__text">JavaScript</span>
+          <span>и формы</span>
+        </div>
+        <div class="container__side">
+          <h3>Фрилансер по жизни: Урок №16</h3>
+          <div class="right__inputs">
+            <div class="right__first-input">
+              <p>Поле ввода</p>
+              <form name="textForm" action="">
+                <input
+                  value="what"
+                  placeholder="Введите что-нибудь"
+                  type="text"
+                  name="rightFirst"
+                  id="right__input"
+                />
+              </form>
+            </div>
+            <div class="right__sec-input">
+              <p>Текстовое поле ввода</p>
+              <form action="">
+                <textarea
+                  placeholder="Введите что-нибудь"
+                  name="rightSec"
+                  id="right__textarea"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </form>
+            </div>
+            <button class="submit-btn" type="submit">
+              Кнопка отправки формы
+            </button>
+          </div>
+        </div>
+        <div class="container__side">
+          <div class="left__inputs">
+            <div class="radiobtns">
+              <form action="">
+                <ul class="radioform">
+                  <p>Радиокнопки</p>
+                  <li>
+                    <input
+                      placeholder="fififi"
+                      type="radio"
+                      name="leftradio"
+                      class="radio__btn"
+                      id="radio__first"
+                    />
+                    <label for="radio__first">1</label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      name="leftradio"
+                      class="radio__btn"
+                      id="radio__sec"
+                    />
+                    <label for="radio__sec">2</label>
+                  </li>
+                  <li>
+                    <input
+                      class="input__checkbox"
+                      type="checkbox"
+                      name="leftThird"
+                      id="checkbox"
+                    />
+                    <label class="input__checkbox-label" for="checkbox"
+                      >checkbox</label
+                    >
+                  </li>
+                </ul>
+              </form>
+              <div class="left__file">
+                <p style="padding-bottom: 12px">Вставить файл</p>
+                <form action="#" name="file">
+                    <input type="file" name="fileInput" id="">
+                </form>
+              </div>
+              <div class="left__list">
+                <p>Список</p>
+                <form action="#">
+                  <label>Your Cars Name: </label>
+                  <input list="cars" />
+                  <datalist id="nums">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                  </datalist>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
